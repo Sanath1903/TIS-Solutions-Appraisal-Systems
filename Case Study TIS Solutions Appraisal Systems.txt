@@ -1,0 +1,30 @@
+Case Study: TIS Solutions Appraisal Systems
+-------------------------------------------
+
+TIS Solutions has great work with their employees, with this in TIS Solutions they have increasing number of employees. 
+TIS solutions has a conflict about the employees and their accomplishments. It will implement appraisal strategies to keep 
+the motivational and performance level of their employees high. So, they want to implement this Appraisal System.
+
+In the EMPLOYEE APPRAISAL APP all employees can know their performance with employee appraisal app. This performance can 
+be given in yearly, half-yearly, or quarterly to their employees. This will help the employees to grow up and enhance 
+skills with appraisal. This Appraisal module allows you to create top-down or bottom-up evaluation plans and give timely 
+feedback and compliments for accomplishments. By knowing all their performances employees will know all their 
+accomplishments and they can perform better next time.
+
+
+The authority is willing to understand the following (not limited to, though):
+1) The no of Employees (department-wise) that generated maximum business (Technology specific) in the 2nd
+quarter every year and across departments.
+2) The quarterly Technology specific transactions (in count and volume of Order value) from departments across 
+3) The comparative volume in On-premise vs Cloud across departments
+4) The no of employee, department-wise who achieved rating 4.5+ in a quarter
+
+Suggestions / Guidelines
+1) Must have clear understanding of the requirement.
+2) Must have sufficient data to yield visually effective output. Should consider
+	a. 3 departments, in each division.
+	b. Each department to have 10 employees per technology.
+	c. Each employee must have sufficient transactions with respect to feedback, skill upgrade, etc. per 
+	   appraisal cycle
+
+
