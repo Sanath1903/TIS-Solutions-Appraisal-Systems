@@ -1,0 +1,43 @@
+CREATE TABLE [Employee2](
+	[Employee_Id] INT NOT NULL,
+	[Department_No] INT FOREIGN KEY REFERENCES Department2(Department_No),
+	[Employee_Name] VARCHAR (30) NOT NULL,
+	[Manager_Name] VARCHAR(30) NULL,
+	[Salary] NUMERIC (18, 2) NULL,
+	[Date_of_Birth] DATE NULL,
+	[Date_of_Joining] DATE NULL,
+	[Location] VARCHAR (30) NULL,
+      Primary Key(Employee_Id))
+
+
+--------------------------------------------------------------------------------------------------
+
+CREATE TABLE [Department2](
+	[Department_No] INT NOT NULL,
+	[Department_Name] VARCHAR (30) NOT NULL,
+	[Department_Location] VARCHAR (30) NULL,
+
+      PRIMARY KEY(Department_No))
+
+-------------------------------------------------------------------------------------------------
+
+INSERT Employee2 VALUES (101,10,'Raja','Shiva',(20000),CAST('1965-01-01' AS Date), CAST('1980-04-01' AS Date),'New Delhi')
+INSERT Employee2 VALUES (102,20,'Roja','Ashish',(22000),CAST('1975-01-01' AS Date), CAST('1999-04-01' AS Date),'Hyderabad')
+INSERT Employee2 VALUES (103,30,'Jeeva','Ram',(25000),CAST('1985-05-01' AS Date), CAST('2005-07-01' AS Date),'Chennai')
+INSERT Employee2 VALUES (104,40,'Sharma','Sufi',(35000),CAST('1985-05-01' AS Date), CAST('2005-07-01' AS Date),'Pune')
+INSERT Employee2 VALUES (107,60,'Sak','Si',(35000),CAST('1985-05-01' AS Date), CAST('2005-07-01' AS Date),'Pune')
+
+INSERT [Employee2] [Employee_Id], [DepartmentNo], [Employee_Name], [Manager_Name] [Salary],[Date_of_Birth], [Date_of_Joining], [Location]) VALUES (101,10 ,'Kumar', 'ram‘, (22000.00 ), CAST('1965-01-01' AS Date), CAST('1980-04-01' AS Date),'New Delhi')
+
+INSERT [Employee2] ([Employee_Id], [DepartmentNo], [Employee_Name], [Manager_Name], [Salary],[Date_of_Birth], [Date_of_Joining], [Location]) VALUES (102,20, 'Sajeev', ‘jeeva’,(25000.00),  CAST('1965-01-01' AS Date), CAST('1980-04-01' AS Date), ‘Chennai’)
+
+INSERT [Employee2] ([Employee_Id], [DepartmentNo], [Employee_Name], [Manager_Name] [Salary],[Date_of_Birth], [Date_of_Joining], [Location]) VALUES (103,30 'Sreeja',’Sufi’, (22000.00), CAST('1965-01-01' AS Date), CAST('1980-04-01' AS Date), ‘Hyderabad')
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+INSERT [department2] ([Department_Id],[Department_Name],[Department_Location]) VALUES (10,'HR','New Delhi')
+
+INSERT [department2] ([Department_Id],[Department_Name],[Department_Location]) VALUES (20,'Marketing', 'New Delhi')
+
+INSERT [department2] ([Department_Id],[Department_Name], [Department_Location]) VALUES (30,'Sales', 'New Delhi')
